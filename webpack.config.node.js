@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 var nodeModules = fs.readdirSync('node_modules')
   .filter(function(x) {
-    return ['.bin'].indexOf(x) === -1;
+    return ['.bin'].indexOf(x) === 
   })
   .reduce(function(nodeModules, module) {
     nodeModules[module] = 'commonjs ' + module;
